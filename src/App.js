@@ -12,9 +12,10 @@ function App() {
       {/* Main Content Section */}
       <main className="content">
         <h2>Harsh Panchal</h2>
+     
         <img 
-          src="https://placedog.net/400/300" 
-          alt="Cute Dog" 
+          src="https://placemonkey.com/400/300" 
+          alt="Cute Monkey" 
           className="body-image" 
         />
       </main>
