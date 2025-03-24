@@ -16,22 +16,34 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       
+      # # - name: Docker Build 
+      #   run: |
+      #     docker build -t devendra110203/myimage:latest .
+
+      # - name: Push Image On Docker Hub
+      #   run: |
+      #     docker push devendra110203/myimage:latest           
+      - name: Harbor login
+        run: |
+          echo "${{ secrets.HARBOR_PASSWORD }}" | docker login ${{ secrets.HARBOR_REGISTRY }} -u ${{ secrets.HARBOR_USERNAME }} --password-stdin
+      
       - name: Docker Build 
         run: |
-          docker build -t devendra110203/myimage:latest .
+          docker build -t ${{ secrets.HARBOR_REGISTRY }}/inventyv/myimage:latest .
 
-      - name: Push Image On Docker Hub
+      - name: Push Image to Harbor
         run: |
-          docker push devendra110203/myimage:latest           
+          docker push ${{ secrets.HARBOR_REGISTRY }}/inventyv/myimage:latest
 
-      - name: Google Cloud Authentication
-        uses: google-github-actions/auth@v0.4.0
-        with:
-             credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-      - name: Publish Message 
-        uses: miraliumre/actions-pubsub@v1
-        with:
-          project_id: ${{ secrets.PROJECT_ID }}
-          topic_name: ${{ secrets.TOPIC_NAME }}
-          message: '{"run":"pipeline"}'
+      
+      # - name: Google Cloud Authentication
+      #   uses: google-github-actions/auth@v0.4.0
+      #   with:
+      #        credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+      # - name: Publish Message 
+      #   uses: miraliumre/actions-pubsub@v1
+      #   with:
+      #     project_id: ${{ secrets.PROJECT_ID }}
+      #     topic_name: ${{ secrets.TOPIC_NAME }}
+      #     message: '{"run":"pipeline"}'
       
