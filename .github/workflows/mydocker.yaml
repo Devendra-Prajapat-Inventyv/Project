@@ -18,7 +18,7 @@ jobs:
       
       - name: Docker Build 
         run: |
-          docker build -t devendra110203/myimage:latest Docker/Dockerfile
+          docker build -t devendra110203/myimage:latest Dockerfile
 
       - name: Push Image On Docker Hub
         run: |
