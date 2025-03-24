@@ -16,13 +16,13 @@
   padding: 20px;
 }
 
-/* Dog Image Styling */
-.body-image {
+.logo-image {
   width: 300px; /* Adjust the size */
   height: auto;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid #555;
 }
 
 /* Footer */

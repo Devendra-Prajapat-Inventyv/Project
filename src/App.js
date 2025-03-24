@@ -11,13 +11,13 @@ function App() {
 
       {/* Main Content Section */}
       <main className="content">
-        <h2>Harsh Panchal</h2>
+        <h1>Hello DevOps Team</h1>
+        <h4>1. Harsh Panchal</h4>
+        <h4>2. Devendra Prajapati</h4>
+        <h4>3. Yagnesh Jariwala </h4>
+        <h4>4. Mihir Bhai</h4>
      
-        <img 
-          src="https://placemonkey.com/400/300" 
-          alt="Cute Monkey" 
-          className="body-image" 
-        />
+      
       </main>
 
       {/* Footer Section */}
