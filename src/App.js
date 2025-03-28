@@ -16,11 +16,7 @@ function App() {
       {/* Main Content with Centered Image */}
       <main>
         <div className="image-container">
-          <img
-            src="https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc"
-            alt="Random Image"
-            className="random-image"
-          />
+          
         </div>
       </main>
 
