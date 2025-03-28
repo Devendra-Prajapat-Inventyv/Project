@@ -16,7 +16,7 @@ function App() {
       {/* Main Content with Centered Image */}
       <main>
         <div className="image-container">
-          
+          <h1> Hello Devendra</h1>
         </div>
       </main>
 
