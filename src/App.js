@@ -1,28 +1,32 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Header Section */}
-      <header className="header">
-        <h1>Hello, </h1>
+      {/* Navigation Bar */}
+      <header>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
-      {/* Main Content Section */}
-      <main className="content">
-        <h1>Hello DevOps Team</h1>
-        <h4>1. Harsh Panchal</h4>
-        <h4>2. Devendra Prajapati</h4>
-        <h4>3. Yagnesh Jariwala </h4>
-        <h4>4. Mihir Bhai</h4>
-     
-      
+      {/* Main Content with Centered Image */}
+      <main>
+        <div className="image-container">
+          <img
+            src="https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc"
+            alt="Random Image"
+            className="random-image"
+          />
+        </div>
       </main>
 
-      {/* Footer Section */}
-      <footer className="footer">
-        <p>devendra.prajapati.inventyv@gmail.com</p>
+      {/* Footer */}
+      <footer>
+        <p>&copy; 2025 My Simple React App. All rights reserved.</p>
       </footer>
     </div>
   );
