@@ -35,7 +35,7 @@ function App() {
         {/* Define Routes */}
         <Routes>
           {/* Home Route */}
-          <Route path="/" element={<h1>Welcome to the Home Page!</h1>} />
+          <Route path="/" element={<h1>Hello !</h1>} />
 
           {/* Registration Route */}
           <Route path="/registration" element={<Registration />} /> {/* Register page */}
