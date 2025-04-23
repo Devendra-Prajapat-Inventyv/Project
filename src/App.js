@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import necessary components
 import './App.css'; // Assuming you have styles for your app
-import Registration from './registration'; // Import Registration component
 
 function App() {
   return (
@@ -33,13 +32,7 @@ function App() {
         </footer>
 
         {/* Define Routes */}
-        <Routes>
-          {/* Home Route */}
-          <Route path="/" element={<h1>Hello !</h1>} />
-
-          {/* Registration Route */}
-          <Route path="/registration" element={<Registration />} /> {/* Register page */}
-        </Routes>
+        
       </div>
     </Router>
   );
