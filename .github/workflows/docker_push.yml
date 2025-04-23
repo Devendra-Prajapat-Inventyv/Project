@@ -18,11 +18,11 @@ jobs:
       
       - name: Docker Image Build 
         run: |
-          docker build -t devendra110203/myimage:latest .
+          docker build -t devendra110203/production:latest .
 
       - name: Push Image On Docker Hub
         run: |
-          docker push devendra110203/myimage:latest           
+          docker push devendra110203/production:latest           
 
       - name: Google Cloud Authentication
         uses: google-github-actions/auth@v0.4.0
