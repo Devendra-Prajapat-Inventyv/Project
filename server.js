@@ -10,7 +10,7 @@ client.collectDefaultMetrics();
 
 // Counter for HTTP requests by method and status code
 const httpRequestCounter = new client.Counter({
-  name: 'http_requests_total',
+  name: 'react_app_http_requests_total',
   help: 'Total number of HTTP requests',
   labelNames: ['method', 'route', 'status'],
 });
